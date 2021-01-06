@@ -26,5 +26,15 @@ public class MoodAnalyser {
 		
 		return "HAPPY";
 	}
+
+	public String analyseMoodForAnyMood(String mood1)
+	{
+		if(mood1.contains("sad"))
+		{
+			return "sad";
+		}
+		
+		return "HAPPY";
+	}
 	
 }

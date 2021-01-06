@@ -32,4 +32,13 @@ public class MoodAnalyserTest {
 		
 	}
 	
+	@Test	
+	public void moodAnalyserTestForAny()
+	{
+		MoodAnalyser moodAnalyser2=new MoodAnalyser();
+		String mood2=moodAnalyser2.analyseMoodForAnyMood("I was in any mood");
+		assertEquals("HAPPY",mood2);
+		
+	}
+	
 }
