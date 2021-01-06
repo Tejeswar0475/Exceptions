@@ -1,13 +1,23 @@
 package AnalyserException;
 
 public class MoodAnalyser {
+	
+	public String message;
+	
+	public MoodAnalyser()
+	{	
+	}
+	
+	public MoodAnalyser(String message)
+	{
+		this.message=message;
+	}
 
 	public String welcomeMessage(String welcomeMessage)
 	{
 		return welcomeMessage;
 	}
 
-	
 	public String analyseMood(String mood)
 	{
 		if(mood.contains("SAD"))
@@ -37,4 +47,13 @@ public class MoodAnalyser {
 		return "HAPPY";
 	}
 	
+	public String analyseMood()
+	{
+		if(message.contains("sad"))
+		{
+			return "sad";
+		}
+		return "happy";
+	}
+
 }

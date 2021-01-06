@@ -7,7 +7,7 @@ import org.junit.Test;
 public class MoodAnalyserTest {
 
 	@Test
-	public void welcomeMessageTest()
+	public void welcomeMessagTest()
 	{
 		MoodAnalyser moodAnalyser=new MoodAnalyser();
 		String welcomeMessageResult=moodAnalyser.welcomeMessage("Welcome to mood analyser");
@@ -28,17 +28,15 @@ public class MoodAnalyserTest {
 	{
 		MoodAnalyser moodAnalyser2=new MoodAnalyser();
 		String mood2=moodAnalyser2.analyseMoodForSad("I was in sad mood");
-		assertEquals("sad",mood2);
-		
+		assertEquals("sad",mood2);	
 	}
 	
 	@Test	
-	public void moodAnalyserTestForAny()
+	public void moodAnalyserTestForConstructor()
 	{
-		MoodAnalyser moodAnalyser2=new MoodAnalyser();
-		String mood2=moodAnalyser2.analyseMoodForAnyMood("I was in any mood");
-		assertEquals("HAPPY",mood2);
-		
+		MoodAnalyser moodAnalyser2=new MoodAnalyser("I am in sad mood");
+		String mood2=moodAnalyser2.analyseMood();
+		assertEquals("sad",mood2);
 	}
 	
 }
