@@ -39,4 +39,14 @@ public class MoodAnalyserTest {
 		assertEquals("sad",mood2);
 	}
 	
+	@Test	
+	public void moodAnalyserTestWithNoParameters()
+	{
+		MoodAnalyser moodAnalyser2=new MoodAnalyser("I am in happy mood");
+		String mood2=moodAnalyser2.analyseMood();
+		assertEquals("happy",mood2);
+	}
+	
+	
+	
 }
