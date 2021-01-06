@@ -1,7 +1,5 @@
 package AnalyserException;
 
-import javax.swing.text.html.HTMLDocument.Iterator;
-
 public class MoodAnalyser {
 
 	public String welcomeMessage(String welcomeMessage)
@@ -18,5 +16,15 @@ public class MoodAnalyser {
 		}
 		return "HAPPY";
 	}	
+
+	public String analyseMoodForSad(String mood1)
+	{
+		if(mood1.contains("sad"))
+		{
+			return "sad";
+		}
+		
+		return "HAPPY";
+	}
 	
 }
