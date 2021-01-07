@@ -63,4 +63,22 @@ public class MoodAnalyserTest {
 		
 	}
 	
+	   @Test
+	    public void nullCatchCustomException()
+	    {
+	        try
+	        {
+	            MoodAnayserCustom moodAnalyser = new MoodAnayserCustom();
+	            String mood = moodAnalyser.analyseMood(null);
+	            assertEquals("HAPPY", mood);
+	        }
+	        catch(MoodAnalyserException e)
+	        {
+	            e.printStackTrace();
+	        }
+
+	    }
+	
+	
+	
 }
